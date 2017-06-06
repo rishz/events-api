@@ -27,6 +27,7 @@ router.route('/events')
         event.interested_count = req.body.interested_count;
         event.start_time = req.body.start_time;
         event.end_time = req.body.end_time;
+        event.description = req.body.description;
         event.place = req.body.place;
         event.is_private = req.body.is_private;
 
@@ -75,6 +76,7 @@ router.route('/event/:event_id')
             event.start_time = req.body.start_time;
             event.end_time = req.body.end_time;
             event.place = req.body.place;
+            event.description = req.body.description;
             event.is_private = req.body.is_private;
             
             event.save(function (err) {

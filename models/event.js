@@ -8,6 +8,7 @@ var EventSchema   = new Schema({
     interested_count:Number,
     start_time: String,
     end_time: String,
+    description: String,
     place: String,
     timestamp: Number,
     is_private: Boolean
